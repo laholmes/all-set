@@ -11,6 +11,7 @@ export class AllSet extends Set {
         }
         return true;
     }
+
     union(setB) {
         let union = new Set(this);
         for (let elem of setB) {
@@ -18,6 +19,7 @@ export class AllSet extends Set {
         }
         return union;
     }
+
     intersection(setB) {
         let intersection = new Set();
         for (let elem of setB) {
@@ -27,6 +29,7 @@ export class AllSet extends Set {
         }
         return intersection;
     }
+
     complement(setB) {
         let complement = new Set(this);
         for (let elem of setB) {
@@ -34,6 +37,7 @@ export class AllSet extends Set {
         }
         return complement;
     }
+
     cartesianProduct(setB) {
         let cartesianProduct = new Set();
         for (let item of this) {
